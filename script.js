@@ -52,6 +52,7 @@ function getWonMoney() {
   if (members.length === 0) {
     return null;
   }
+  let wonMoney = 0;
   members.forEach(function (value, index, arr) {
     wonMoney += value["contribution"]
   })
